@@ -20,28 +20,18 @@
               <p style="text-align:center">
                 <name>Quan Nguyen Minh</name>
               </p>
-              <p>I am currently a first-year Computer Science PhD Student at <a href ="https://www.cise.ufl.edu/">University of Florida</a>, under the supervision of Prof. <a href ="https://optnetsci.cise.ufl.edu//">My Thai</a>.
-              </p>
               <p>
-                I received my Bachelor Degree in <a href ="https://bme.hust.edu.vn/">Biomedical Engineering</a> at <a href ="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a> and my master degree in Biomedical Computing at <a href="https://www.tum.de/"> Technical University of Munich (TUM)</a>.
-              <p>
-                During my time as an undergraduate, I worked as an intern at <a href="http://viettelrd.com.vn/en"> Viettel High Tech </a> where I develop Computer Vision Algorithms for smart camera systems, including <a href="https://arxiv.org/abs/2201.10107"> People detection and Heatmap Visualization using Fisheye Camera for retail stores</a>, <a href="https://pages.nist.gov/frvt/reportcards/11/viettelhightech_000.html"> face recognition algorithm for Edge devices </a> and high speed traffic AI Camera. I also worked as a full-time Research Assistant at <a href="https://vin-smart-health.erp-smb.com/">VinUni-Illinois Smart Health Center (VishC)</a>, a joint center between <a href="vinuni.edu.vn"> VinUni</a> and <a href="grainger.illinois.edu"> the College of Engineering, University of Illinois at Urbana-Champaign </a>. My research focus at VishC is <a href ="https://ieeexplore.ieee.org/document/10247258">federated learning for healthcare</a>.
-              </p>
-	      <p>
-                When I was in Germany, I worked on cutting-edge ultrasound imaging technologies at <a href="https://lumavision.com/"> Luma Vision GmbH</a>. I also wrote my Master thesis on the impact of differential privacy on the fairness of AI algorithms at <a href="https://aim-lab.io/"> Lab for AI in Medicine at TU Munich </a> and <a href="https://www.siemens-healthineers.com/de"> Siemens Healthineers </a>.
-              </p>
-	      <p>
-                As a PhD student at Adaptive Learning and Optimization Lab @ UF, I focus on Federated Learning, Differential privacy, explainable AI and their applications in the real world.
+                I am currently a second-year PhD student at the <a href ="https://www.cise.ufl.edu/">University of Florida</a>, conducting research in trustworthy and secure AI, foundation models, and federated learning. Previously, I received my Bachelor degree in Biomedical Engineering from <a href ="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a> and my Master degree in Biomedical Computing from <a href="https://www.tum.de/">Technical University of Munich (TUM)</a>.
               </p>
               <p>
                 <a href="mailto:quan.nguyen1@ufl.edu">Email</a> &nbsp/&nbsp
-                <a href="https://drive.google.com/file/d/1OimJ3_gMRkkIRvJJnrh8fn65XmFF2ex-/view?usp=sharing">CV</a> &nbsp/&nbsp
+                <a href="./cv.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=kYSrBrwAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/GivralNguyen/">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/quan_nm2.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/quan_nm3.jpg" class="hoverZoomLink"></a>
+              <a href="images/profile_new.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_new.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -50,12 +40,135 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am passionate about trustworthy AI and AI in Medicine. Representative papers are <span class="highlight">highlighted</span>.
-              </p>
-            </td>
+                I am passionate about trustworthy AI and scalable decentralized machine learning. Representative papers are <span class="highlight">highlighted</span>.
+              </p>            </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="softprompt_stop()" onmouseover="softprompt_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='softprompt_image'>
+                  <img src='images/promptmia.png' width="160"></div>
+                <img src='images/promptmia.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function softprompt_start() {
+                  document.getElementById('softprompt_image').style.opacity = "1";
+                }
+                function softprompt_stop() {
+                  document.getElementById('softprompt_image').style.opacity = "0";
+                }
+                softprompt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2601.06641">
+                <papertitle>Leveraging Soft Prompts for Privacy Attacks in Federated Prompt Tuning</papertitle>
+              </a>
+              <br>
+              <font color="red"><strong>Quan Minh Nguyen</strong></font>, Min-Seon Kim, Hoang M. Ngo, Trong Nghia Hoang, Hyuk-Yoon Kwon, My T. Thai
+              <br>
+              <em>Preprint</em>
+              <p></p>
+              <p>
+                In this work, we show that prompt tuning in federated learning creates new privacy vectors, allowing adversaries to recover sensitive training data and attack client privacy.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="unmask_stop()" onmouseover="unmask_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='unmask_image'>
+                  <img src='images/ami.png' width="160"></div>
+                <img src='images/ami.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function unmask_start() {
+                  document.getElementById('unmask_image').style.opacity = "1";
+                }
+                function unmask_stop() {
+                  document.getElementById('unmask_image').style.opacity = "0";
+                }
+                unmask_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2506.17292">
+                <papertitle>Unmasking Inference Attacks against LDP-Protected Clients in Federated Vision Models</papertitle>
+              </a>
+              <br>
+              <font color="red"><strong>Quan Minh Nguyen*</strong></font>, Minh N. Vu*, Truc Nguyen, My T. Thai
+              <br>
+              <em>ICML ’25</em>
+              <p></p>
+              <p>
+                In this work, we present a systematic analysis of membership and reconstruction inference under local differential privacy in federated vision models.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="qshift_stop()" onmouseover="qshift_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='qshift_image'>
+                  <img src='images/qshift.png' width="160"></div>
+                <img src='images/qshift.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function qshift_start() {
+                  document.getElementById('qshift_image').style.opacity = "1";
+                }
+                function qshift_stop() {
+                  document.getElementById('qshift_image').style.opacity = "0";
+                }
+                qshift_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2602.02962">
+                <papertitle>Q-ShiftDP: A Differentially Private Parameter-Shift Rule for Quantum Machine Learning</papertitle>
+              </a>
+              <br>
+              Hoang M.N., Nhat H.X., <font color="red"><strong>Quan Minh Nguyen</strong></font>, Nguyen H.K.D., Incheol Shin, My T. Thai
+              <br>
+              <em>AISTATS ’26</em>
+              <p></p>
+              <p>
+                In this work, we introduce a private parameter-shift mechanism that enables differentially private optimization in quantum machine learning.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="ice_stop()" onmouseover="ice_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ice_image'>
+                  <img src='images/ice_after.png' width="160"></div>
+                <img src='images/ice_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ice_start() {
+                  document.getElementById('ice_image').style.opacity = "1";
+                }
+                function ice_stop() {
+                  document.getElementById('ice_image').style.opacity = "0";
+                }
+                ice_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/10793955">
+                Advancing 3D ICE: Challenges and Deep Learning Strategies in Atrium Segmentation
+              </a>
+              <br>
+              Martina Casagrande, <font color="red"><strong>Quan Nguyen</strong></font>, Ivan Dudurych, Christoph Hennersperger, Stefan Wörz
+              <br>
+              <em>IEEE IUS ’24</em>
+              <p></p>
+              <p>
+                In this work, we present deep learning solutions for 3D intracardiac echocardiography segmentation and outline key challenges for real-time clinical deployment.
+              </p>
+            </td>
+          </tr>
           <tr onmouseout="feddctpaper_stop()" onmouseover="feddctpaper_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -176,72 +289,30 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
-              <heading>Language Qualifications</heading>
-			        <p>
-			          <span>&#x25cf;</span> &nbsp; <b>[Nov 2023]</b> &nbsp; 8.5 IELTS ( 9.0 R, 9.0 L, 7.5 W, 8.0 S)
-                <br>
-                <span>&#x25cf;</span> &nbsp; <b>[April. 2021]</b> &nbsp; 985 TOEIC
-                <br>
-                <span>&#x25cf;</span> &nbsp; <b>[April. 2015]</b> &nbsp; Completed basic German Course (A2.2) at Goethe Institut.
-		    	    </p>
-
-          </td>
-        </tr>
+              <heading>Language</heading>
+              <p>
+                <span>&#x25cf;</span> &nbsp; English (IELTS 8.5), German (A2)
+              </p>
+            </td>
+          </tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
-              <heading>Activities</heading>
-			        <p>
-		<p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Jun. 2024]</b> &nbsp; I am working on my thesis at Lab for AI Medicine at TU Munich and Siemens Healthineers.
-                </p>
-		<p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Jun. 2024]</b> &nbsp; One paper (second author) is accepted to IEEE Ultrasonics, Ferroelectrics, and Frequency Control Joint Symposium.
-                </p>
-		<p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Sep. 2023]</b> &nbsp; I participated in SUMMER SCHOOL ON “MODERN MACHINE LEARNING: FOUNDATIONS AND APPLICATIONS” in Ninh Binh, Vietnam.
-                </p>
-		<p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Aug. 2023]</b> &nbsp; One paper (first author) <a href="https://arxiv.org/abs/2211.10948"> FedDCT: A Novel Federated Learning Approach for Training Large Convolutional Neural Networks on Resource-constrained Devices</a> is accepted to IEEE Transactions on Network and Service management. 
-                </p>			
-                <p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Aug. 2022]</b> &nbsp; I participated in <a href="https://www.truonghekhoahoc.com/2022/"> 9th Vietnam Summer School of Science</a> at Quy Nhon, Vietnam. The scholarship is to inspire and support young Vietnamese generations who are potential and keen as well as full of passions on pursuing research as a career.
-                </p>
-                <p>
-                  <span>&#x25cf;</span> &nbsp; <b>[July. 2022]</b> &nbsp; I serve as the organizer for the <a href="https://smarthealth.vinuni.edu.vn/event/the-first-vinuni-illinois-smart-health-workshop-11-15-july-2022/"> First VinUni-Illinois Smart Health Center Workshop</a> and <a href="https://smarthealth.vinuni.edu.vn/event/theprephdsummerschool2022/"> VinUni-Illinois Smart Health Center | Pre-PhD Summer School 2022 </a>.
-                </p>
-                <p>
-                  <span>&#x25cf;</span> &nbsp; <b>[Feb. 2022]</b> &nbsp; I started working at Teaching Assistant for course <a href="https://vinuni.edu.vn/college-of-engineering-computer-science/cs/curriculum-structure/curriculum-planner/"> COMP1020: OOP & Data Structures</a> at Vin University, taught by Prof. Hieu Pham and Prof. Kok Seng.
-                </p>
-                <p>
-			          <span>&#x25cf;</span> &nbsp; <b>[Jan. 2022]</b> &nbsp; I joined <a href="https://vin-smart-health.erp-smb.com/">VinUni-Illinois Smart Health Center </a> as Research Assistant under supervison of <a href="https://huyhieupham.github.io/"> Prof. Hieu Pham</a> and <a href="https://vinuni.edu.vn/people/kok-seng-wong/"> Prof. Kok Seng Wong</a>. My research focus is on federated learning for healthcare. My work is a part of <a href="https://vinuni.edu.vn/two-vinuniversitys-funded-projects-by-vinif-in-response-to-smart-healthcare-service-and-smart-lighting-technology/">VAIPE</a> project: AI-assisted IoT-enabled smart, optimal, and Protective Healthcare monitoring and supporting system for Vietnamese.
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[December. 2021]</b> &nbsp; One paper "Occlusion Robust Face Recognition Based on Mask Learning With Attention Mechanism" got accepted to <a href="https://icisn.com/"> International Conference on Intelligent Systems & Networks (ICISN 2022)</a></em>.
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[October. 2021]</b> &nbsp; One paper (first author) <a href="https://arxiv.org/abs/2201.10107">ARPD: Anchor-free Rotation-aware People Detection using Topview Fisheye Camera</a> got accepted to <a href="http://www.avss2021.org"> 17th IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS 2021)</a></em>.
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[September. 2021]</b> &nbsp; Our submission <a href="https://pages.nist.gov/frvt/reportcards/11/viettelhightech_000.html">viettelhightech_000</a> for the <a href="https://pages.nist.gov/frvt/html/frvt11.html"> FRVT 1:1 Vendor Test</a> achieved the <a href="https://ibb.co/b2pjbHx">good results</a> among all Vietnamese clients 
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[June. 2021]</b> &nbsp; Our group at  Biosignal and Medical Image Analysis Lab achieved <a href="https://set.hust.edu.vn/storage/huongtruongthu/qd-178-khen-thuong-svnckh-cap-truong-2020-2021.pdf">third prize</a> in Hanoi University of Science and Technology Student's Academic Research Contest (University level)
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[2020]</b> &nbsp; I achieved HUST Academic Incentive Scholarship for students with excellent academic results in semester 2020-2.
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[Nov. 2019]</b> &nbsp; I became a member of cohort 20 of <a href ="https://www.google.com/search?channel=fs&client=ubuntu&q=fpt+young+talent"> FPT Young Talents (FYT)</a>. FYT is a special educational organization founded in 1999 by the then-CEO of <a href ="https://www.fpt-software.com/">FPT Corporation</a> : <a href="https://vi.wikipedia.org/wiki/Tr%C6%B0%C6%A1ng_Gia_B%C3%ACnh">Truong Gia Binh</a> aiming to nurture the young talents of Vietnam.
-                </p>
-                <p>
-                <span>&#x25cf;</span> &nbsp; <b>[Sep. 2018]</b> &nbsp; I was one of 25 HUST's students chosen to participate in a 3-weeks leadership exchange program <a href="https://www.facebook.com/TFISCALE.HUST/">TFI Scale</a> at <a href ="https://www.tp.edu.sg/">Temasek Polytechnic</a>, Singapore. Fully sponsored by the <a href="https://www.temasekfoundation.org.sg/home"> Temasek Foundation</a>.
-                </p>
-          </td>
-        </tr>
+              <heading>Awards</heading>
+              <p>
+                <span>&#x25cf;</span> &nbsp; <b>2026</b> CISE Graduate Scholarship, University of Florida<br>
+                <span>&#x25cf;</span> &nbsp; <b>2023</b> Scholarship - Modern Machine Learning: Foundations and Applications Program<br>
+                <span>&#x25cf;</span> &nbsp; <b>2023</b> Scholarship - 9th Vietnam Summer School of Science<br>
+                <span>&#x25cf;</span> &nbsp; <b>2022</b> First prize, Vietnam AI Day (VAIPE: Protective healthcare monitoring)<br>
+                <span>&#x25cf;</span> &nbsp; <b>2021</b> Third prize, HUST Academic Research Contest<br>
+                <span>&#x25cf;</span> &nbsp; <b>2020</b> Academic Incentive Scholarship, HUST<br>
+                <span>&#x25cf;</span> &nbsp; <b>2019</b> Scholarship - FPT Center for Young Talents<br>
+                <span>&#x25cf;</span> &nbsp; <b>2018</b> International Exchange Scholarship at Temasek Polytechnic<br>
+              </p>
+            </td>
+          </tr>
         </table>
-				
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
@@ -383,119 +454,13 @@
               </p>
             </td>
           </tr>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <heading>My hobbies</heading>
-              </td>
-            </tr>
-          </tbody></table>
-          <p>
-            I have some hobbies that i like to do in my spare time. Feel free to contact me if you find any thing in common!
-          </p>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            <tr onmouseout="rock_stop()" onmouseover="rock_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='rock_image'>
-                    <img src='images/rock_before.jpg' width="160"></div>
-                  <img src='images/rock_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function feddct_start() {
-                    document.getElementById('rock_image').style.opacity = "1";
-                  }
-  
-                  function feddct_stop() {
-                    document.getElementById('rock_image').style.opacity = "0";
-                  }
-                  feddct_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Rock ’n’ Roll Music!! </papertitle>
-                <p>
-                  I’m a passionate rock and heavy metal fan with a wide range of musical interests, from the classic sounds of the '70s (think Pink Floyd, Led Zeppelin, KISS, ...) to the iconic '80s (Van Halen, Guns N' Roses, Mötley Crüe, ...) and '90s (Nirvana, Green Day). I even dig into some newer bands like My Chemical Romance and Paramore.
-                </p>
-              </td>
-            </tr>
-            <tr onmouseout="bass_stop()" onmouseover="bass_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='bass_image'>
-                    <img src='images/bass_before.jpg' width="160"></div>
-                  <img src='images/bass_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function feddct_start() {
-                    document.getElementById('bass_image').style.opacity = "1";
-                  }
-  
-                  function feddct_stop() {
-                    document.getElementById('bass_image').style.opacity = "0";
-                  }
-                  feddct_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Playing in a Rock ’n’ Roll Band! </papertitle>
-                <p>
-                  I also play bass guitar. If you’re interested in teaming up to bring some classic tunes to life, feel free to reach out!. Don't expect me to do much improvising though. I mean, i'm no Joe Walsh in the brain department (yes, that's a The Simpsons reference).
-                </p>
-              </td>
-            </tr>
-            <tr onmouseout="game_stop()" onmouseover="game_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='game_image'>
-                    <img src='images/game_before.jpg' width="160"></div>
-                  <img src='images/game_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function feddct_start() {
-                    document.getElementById('game_image').style.opacity = "1";
-                  }
-  
-                  function feddct_stop() {
-                    document.getElementById('game_image').style.opacity = "0";
-                  }
-                  feddct_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Playing Tabletop games </papertitle>
-                <p>
-                   I have loved playing Yu-gi-Oh ever since i was a kid. Dropped it for a few years during college but started picking up again. Recently i have been picking up Warhammer 40k as well.
-                </p>
-              </td>
-            </tr>
-            <tr onmouseout="traveling_stop()" onmouseover="traveling_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='traveling_image'>
-                    <img src='images/traveling_before.jpg' width="160"></div>
-                  <img src='images/traveling_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function feddct_start() {
-                    document.getElementById('traveling_image').style.opacity = "1";
-                  }
-  
-                  function feddct_stop() {
-                    document.getElementById('traveling_image').style.opacity = "0";
-                  }
-                  feddct_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <papertitle>Traveling and Hiking </papertitle>
-                <p>
-                   Well, who doesn't love traveling and enjoying new culture. Ever since i moved to Germany, i have started to enjoy going on hikes as well, especially in the mountains.
-                </p>
-              </td>
-            </tr>
-  </table>
-  <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=_tRM01fYmTY2xUWyeC3wA2_a0kVTbNFudQSVjcWw7j0&cl=ffffff&w=a"></script> -->
+        </tbody></table>
+  <div style="margin:2em 0 1em 0; padding:1em; border-top:1px solid #ddd; text-align:center;">
+    <strong>Visitor map</strong>
+    <div style="margin-top:0.5em;">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&cl=ffffff&w=a"></script>
+    </div>
+  </div>
 </body>
 
 </html>
