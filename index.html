@@ -72,7 +72,7 @@
               <em>Preprint</em>
               <p></p>
               <p>
-                In this work, we show that prompt tuning in federated learning creates new privacy vectors, allowing adversaries to recover sensitive training data and attack client privacy.
+                 We propose PromptMIA, a membership inference attack tailored to federated prompt-tuning, in which a malicious server can insert adversarially crafted prompts and monitors their updates during collaborative training to accurately determine whether a target data point is in a client's private dataset. We formalize this threat as a security game and empirically show that PromptMIA consistently attains high advantage in this game across diverse benchmark datasets. Our theoretical analysis further establishes a lower bound on the attack's advantage which explains and supports the consistently high advantage observed in our empirical results. 
               </p>
             </td>
           </tr>
@@ -103,7 +103,7 @@
               <em>ICML ’25</em>
               <p></p>
               <p>
-                In this work, we present a systematic analysis of membership and reconstruction inference under local differential privacy in federated vision models.
+                We derive theoretical lower bounds for the success rates of low-polynomial time MIAs that exploit vulnerabilities in fully connected or self-attention layers. We establish that even when data are protected by LDP, privacy risks persist, depending on the privacy budget. Practical evaluations on federated vision models confirm considerable privacy risks, revealing that the noise required to mitigate these attacks significantly degrades models' utility.
               </p>
             </td>
           </tr>
@@ -134,7 +134,8 @@
               <em>AISTATS ’26</em>
               <p></p>
               <p>
-                In this work, we introduce a private parameter-shift mechanism that enables differentially private optimization in quantum machine learning.
+                In this work, we introduce the Differentially Private ParameterShift Rule (Q-ShiftDP), the first privacy
+                mechanism tailored to Quantum ML.
               </p>
             </td>
           </tr>
@@ -211,7 +212,7 @@
               
             </td>
 	  </tr>         
-          <tr onmouseout="fisheye_stop()" onmouseover="fisheye_start()" bgcolor="#ffffd0">
+          <tr onmouseout="fisheye_stop()" onmouseover="fisheye_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='fisheye_image'>
