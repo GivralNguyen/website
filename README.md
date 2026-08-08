@@ -1,1 +1,9 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo. If you do clone this website, feel free to add an attribution link to your own downstream website in index.html if you want.
+# quannguyenminh.github.io
+
+Source for my personal academic website.
+
+Static, dependency-free: `index.html` + `stylesheet.css`, no build step. Sections are tabs
+(`#bio`, `#research`, `#experience`, `#awards`, `#code`) — each is linkable by hash. Light and dark
+themes follow the OS by default and can be overridden with the toggle in the header.
+
+Earlier versions of this site were derived from [Jon Barron's website](https://jonbarron.info/).

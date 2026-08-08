@@ -1,467 +1,637 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Quan Nguyen Minh</title>
-  
-  <meta name="author" content="Quan Nguyen Minh">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <title>Quan Nguyen Minh</title>
+  <meta name="author" content="Quan Nguyen Minh">
+  <meta name="description" content="Quan Nguyen Minh, PhD student at the University of Florida working on privacy-preserving machine learning, federated learning, differential privacy and agentic AI security.">
+
+  <meta property="og:title" content="Quan Nguyen Minh">
+  <meta property="og:description" content="PhD student, University of Florida. Trustworthy &amp; secure AI: privacy attacks on foundation models, differential privacy, federated learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile_new.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <script>
+    // set before paint: avoids a flash of the wrong theme / unhidden panels
+    (function () {
+      document.documentElement.classList.add('js');
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Quan Nguyen Minh</name>
-              </p>
-              <p>
-                I am currently a second-year PhD student at the <a href ="https://www.cise.ufl.edu/">University of Florida</a>, conducting research in trustworthy and secure AI, foundation models, and federated learning. Previously, I received my Bachelor degree in Biomedical Engineering from <a href ="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a> and my Master degree in Biomedical Computing from <a href="https://www.tum.de/">Technical University of Munich (TUM)</a>.
-              </p>
-              <p>
-                <a href="mailto:quan.nguyen1@ufl.edu">Email</a> &nbsp/&nbsp
-                <a href="./cv.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=kYSrBrwAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/GivralNguyen/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile_new.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_new.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I am passionate about trustworthy AI and scalable decentralized machine learning. Representative papers are <span class="highlight">highlighted</span>.
-              </p>            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="softprompt_stop()" onmouseover="softprompt_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='softprompt_image'>
-                  <img src='images/promptmia.png' width="160"></div>
-                <img src='images/promptmia.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function softprompt_start() {
-                  document.getElementById('softprompt_image').style.opacity = "1";
-                }
-                function softprompt_stop() {
-                  document.getElementById('softprompt_image').style.opacity = "0";
-                }
-                softprompt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2601.06641">
-                <papertitle>Leveraging Soft Prompts for Privacy Attacks in Federated Prompt Tuning</papertitle>
-              </a>
-              <br>
-              <font color="red"><strong>Quan Minh Nguyen</strong></font>, Min-Seon Kim, Hoang M. Ngo, Trong Nghia Hoang, Hyuk-Yoon Kwon, My T. Thai
-              <br>
-              <em>Preprint</em>
-              <p></p>
-              <p>
-                 We propose PromptMIA, a membership inference attack tailored to federated prompt-tuning, in which a malicious server can insert adversarially crafted prompts and monitors their updates during collaborative training to accurately determine whether a target data point is in a client's private dataset. We formalize this threat as a security game and empirically show that PromptMIA consistently attains high advantage in this game across diverse benchmark datasets. Our theoretical analysis further establishes a lower bound on the attack's advantage which explains and supports the consistently high advantage observed in our empirical results. 
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="unmask_stop()" onmouseover="unmask_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='unmask_image'>
-                  <img src='images/ami.png' width="160"></div>
-                <img src='images/ami.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function unmask_start() {
-                  document.getElementById('unmask_image').style.opacity = "1";
-                }
-                function unmask_stop() {
-                  document.getElementById('unmask_image').style.opacity = "0";
-                }
-                unmask_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2506.17292">
-                <papertitle>Unmasking Inference Attacks against LDP-Protected Clients in Federated Vision Models</papertitle>
-              </a>
-              <br>
-              <font color="red"><strong>Quan Minh Nguyen*</strong></font>, Minh N. Vu*, Truc Nguyen, My T. Thai
-              <br>
-              <em>ICML ’25</em>
-              <p></p>
-              <p>
-                We derive theoretical lower bounds for the success rates of low-polynomial time MIAs that exploit vulnerabilities in fully connected or self-attention layers. We establish that even when data are protected by LDP, privacy risks persist, depending on the privacy budget. Practical evaluations on federated vision models confirm considerable privacy risks, revealing that the noise required to mitigate these attacks significantly degrades models' utility.
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="qshift_stop()" onmouseover="qshift_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='qshift_image'>
-                  <img src='images/qshift.png' width="160"></div>
-                <img src='images/qshift.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function qshift_start() {
-                  document.getElementById('qshift_image').style.opacity = "1";
-                }
-                function qshift_stop() {
-                  document.getElementById('qshift_image').style.opacity = "0";
-                }
-                qshift_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2602.02962">
-                <papertitle>Q-ShiftDP: A Differentially Private Parameter-Shift Rule for Quantum Machine Learning</papertitle>
-              </a>
-              <br>
-              Hoang M.N., Nhat H.X., <font color="red"><strong>Quan Minh Nguyen</strong></font>, Nguyen H.K.D., Incheol Shin, My T. Thai
-              <br>
-              <em>AISTATS ’26</em>
-              <p></p>
-              <p>
-                In this work, we introduce the Differentially Private ParameterShift Rule (Q-ShiftDP), the first privacy
-                mechanism tailored to Quantum ML.
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="ice_stop()" onmouseover="ice_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ice_image'>
-                  <img src='images/ice_after.png' width="160"></div>
-                <img src='images/ice_after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function ice_start() {
-                  document.getElementById('ice_image').style.opacity = "1";
-                }
-                function ice_stop() {
-                  document.getElementById('ice_image').style.opacity = "0";
-                }
-                ice_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10793955">
-                Advancing 3D ICE: Challenges and Deep Learning Strategies in Atrium Segmentation
-              </a>
-              <br>
-              Martina Casagrande, <font color="red"><strong>Quan Nguyen</strong></font>, Ivan Dudurych, Christoph Hennersperger, Stefan Wörz
-              <br>
-              <em>IEEE IUS ’24</em>
-              <p></p>
-              <p>
-                In this work, we present deep learning solutions for 3D intracardiac echocardiography segmentation and outline key challenges for real-time clinical deployment.
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="feddctpaper_stop()" onmouseover="feddctpaper_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='feddctpaper_image'>
-                  <img src='images/feddct_after.jpg' width="160"></div>
-                <img src='images/feddct_after.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function feddctpaper_start() {
-                  document.getElementById('feddctpaper_image').style.opacity = "1";
-                }
 
-                function feddctpaper_stop() {
-                  document.getElementById('feddctpaper_image').style.opacity = "0";
-                }
-                feddctpaper_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2211.10948">
-                <papertitle>FedDCT: Federated Learning of Large Convolutional Neural Networks on Resource Constrained Devices using Divide and Collaborative Training</papertitle>
-              </a>
-              <br>
-              <font color="red"><strong>Quan Nguyen Minh</strong></font>,
-              <a href="https://scholar.google.com/citations?user=mXcFcNkAAAAJ&hl=en">Hieu H. Pham</a>,
-              <a href="https://scholar.google.com/citations?hl=en&user=WQyULhIAAAAJ">Kok-Seng Wong</a>, 
-              <a href="https://scholar.google.com/citations?hl=en&user=L_NKoQwAAAAJ">Phi Le Nguyen</a>,
-              <br>
-              <a href="https://scholar.google.co.jp/citations?user=1DqrHWEAAAAJ&hl=en">Truong Thao Nguyen</a>,
-              <a href="https://scholar.google.com/citations?user=RIeAomMAAAAJ&hl=en">Minh N. Do</a>
-              <br>
-							<em> <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028">IEEE Transactions of Network and Service Management</a></em>, 2023.
-              <a href="https://arxiv.org/abs/2211.10948">arxiv</a> /
-              <a href="https://ieeexplore.ieee.org/document/10247258/">IEEE</a> /
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=vi&user=kYSrBrwAAAAJ&citation_for_view=kYSrBrwAAAAJ:W7OEmFMy1HYC">Google Scholar</a> /
-              <p></p>
-              <p>
-                We propose FedDCT (Federated Divide and Collaborative Training), a novel FL architecture that allows for DCML with considerably lower client memory requirements over traditional FL while introducing no additional training cost on the central server.  FedDCT enables a cluster of several clients to cooperatively train a large deep learning model, in contrast to standard FL, which demands that each client train the full-size neural network independently during each training round.
-              </p>
-              
-            </td>
-	  </tr>         
-          <tr onmouseout="fisheye_stop()" onmouseover="fisheye_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='fisheye_image'>
-                  <img src='images/fisheye_before.jpg' width="160"></div>
-                <img src='images/fisheye_after.jpg'width="160">
-              </div>
-              <script type="text/javascript">
-                function fisheye_start() {
-                  document.getElementById('fisheye_image').style.opacity = "1";
-                }
-
-                function fisheye_stop() {
-                  document.getElementById('fisheye_image').style.opacity = "0";
-                }
-                fisheye_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2201.10107.pdf">
-                <papertitle>ARPD: Anchor-free Rotation-aware People Detection using Topview Fisheye Camera</papertitle>
-              </a>
-              <br>
-              <font color="red"><strong>Quan Nguyen Minh</strong></font>, Bang Le Van, Can Nguyen, Anh Le and <a href="https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en">Viet Dung Nguyen</a>
-              <br>
-              <em><a href="http://www.avss2021.org/">AVSS</a></em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://arxiv.org/abs/2201.10107">arxiv</a> /
-              <a href="https://ieeexplore.ieee.org/document/9663768/">IEEE</a> /
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kYSrBrwAAAAJ&citation_for_view=kYSrBrwAAAAJ:u5HHmVD_uO8C">Google Scholar</a> /
-              <a href="data/arpd.bib">bibtex</a>
-              <p></p>
-              <p>In this work, we propose ARPD, a single-stage anchor-free fully convolutional network to detect arbitrarily rotated people in fish-eye images. Our network uses keypoint estimation to find the center point of each object and regress the object's other properties directly. To capture the various orientation of people in fish-eye cameras, in addition to the center and size, ARPD also predicts the angle of each bounding box.</p>
-            </td>
-          </tr>
-          <tr onmouseout="pano_stop()" onmouseover="pano_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='pano_image'>
-                  <img src='images/pano_before.jpg' width="160"></div>
-                <img src='images/pano_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function pano_start() {
-                  document.getElementById('pano_image').style.opacity = "1";
-                }
-
-                function pano_stop() {
-                  document.getElementById('pano_image').style.opacity = "0";
-                }
-                pano_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Incorporation of Panoramic View in Fall Detection Using Omnidirectional Camera</papertitle>
-              <br>
-              <a href="https://scholar.google.com/citations?user=3FN8qi0AAAAJ&hl=en">Viet Dung Nguyen</a>,
-              <a href="https://scholar.google.com.vn/citations?user=lJlStI4AAAAJ&hl=vi">Phuc Ngoc Pham</a>,
-              Xuan Bach Nguyen,
-              Thi Men Tran, <br>
-              <font color="red"><strong>Quan Nguyen Minh</strong></font>.
-              <br>
-							<em> <a href="https://link.springer.com/book/10.1007/978-981-16-2094-2">Intelligent Systems and Networks</a></em>, 2021.
-              <br>
-              <a href="https://link.springer.com/chapter/10.1007/978-981-16-2094-2_39">Springer</a> /
-              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=vi&user=kYSrBrwAAAAJ&citation_for_view=kYSrBrwAAAAJ:d1gkVwhDpl0C">Google Scholar</a> /
-              <a href="data/pano.bib">bibtex</a>
-              <br>
-              <p></p>
-              <p>
-                The aim of this work is to incorporate the de-warping of fisheye image using polar to Cartesian transformation to generate a panoramic view to aid in fall detection. 
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <heading>Language</heading>
-              <p>
-                <span>&#x25cf;</span> &nbsp; English (IELTS 8.5), German (A2)
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <heading>Awards</heading>
-              <p>
-                <span>&#x25cf;</span> &nbsp; <b>2026</b> CISE Graduate Scholarship, University of Florida<br>
-                <span>&#x25cf;</span> &nbsp; <b>2023</b> Scholarship - Modern Machine Learning: Foundations and Applications Program<br>
-                <span>&#x25cf;</span> &nbsp; <b>2023</b> Scholarship - 9th Vietnam Summer School of Science<br>
-                <span>&#x25cf;</span> &nbsp; <b>2022</b> First prize, Vietnam AI Day (VAIPE: Protective healthcare monitoring)<br>
-                <span>&#x25cf;</span> &nbsp; <b>2021</b> Third prize, HUST Academic Research Contest<br>
-                <span>&#x25cf;</span> &nbsp; <b>2020</b> Academic Incentive Scholarship, HUST<br>
-                <span>&#x25cf;</span> &nbsp; <b>2019</b> Scholarship - FPT Center for Young Talents<br>
-                <span>&#x25cf;</span> &nbsp; <b>2018</b> International Exchange Scholarship at Temasek Polytechnic<br>
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>(Mostly) Open Source Projects</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <tr onmouseout="feddct_stop()" onmouseover="feddct_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='npil_image'>
-                  <img src='images/feddct_before.jpg' width="160"></div>
-                <img src='images/feddct_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function feddct_start() {
-                  document.getElementById('feddct_image').style.opacity = "1";
-                }
-
-                function feddct_stop() {
-                  document.getElementById('feddct_image').style.opacity = "0";
-                }
-                feddct_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Federated Divide and Cotraining</papertitle>
-              <p>
-                This repository contains the code and experiments for the paper FedDCT:Federated Divide and Collaborative Training, accepted to IEEE Transactions on Network and Service Management
-              <br>
-              <a href="https://github.com/vinuni-vishc/fedDCT">Github</a> 
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="nist_stop()" onmouseover="nist_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='npil_image'>
-                  <img src='images/nist_after.jpg' width="160"></div>
-                <img src='images/nist_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nist_start() {
-                  document.getElementById('nist_image').style.opacity = "1";
-                }
-
-                function nist_stop() {
-                  document.getElementById('nist_image').style.opacity = "0";
-                }
-                nist_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>NIST FRVT 1:1 Face Recognition Vendor Test</papertitle>
-              <p>
-                I worked in a team with other engineers from VHT to design face recogntion algorithms to participate in NIST FRVT 1:1 Verification Test. NIST provides independent evaluations of commercially available and prototype face recognition technologies. Our submission achieved respectable results.
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="sort_stop()" onmouseover="sort_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='npil_image'>
-                  <img src='images/sort_after.jpg' width="160"></div>
-                <img src='images/sort_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function sort_start() {
-                  document.getElementById('sort_image').style.opacity = "1";
-                }
-
-                function sort_stop() {
-                  document.getElementById('sort_image').style.opacity = "0";
-                }
-                sort_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Simple Online Realtime Tracking (SORT) in Java</papertitle>
-              <p>
-                I reimplemented the famous SORT tracking algorithm from scratch in Java using only OpenCV. Was a fun project to code and i applied this for tracking Vehicle on edge devices.
-              <br>
-              <a href="https://github.com/GivralNguyen/sort-java">Github</a> 
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="ssd_stop()" onmouseover="ssd_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='npil_image'>
-                  <img src='images/ssd_after.jpg' width="160"></div>
-                <img src='images/ssd_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function ssd_start() {
-                  document.getElementById('ssd_image').style.opacity = "1";
-                }
-
-                function ssd_stop() {
-                  document.getElementById('ssd_image').style.opacity = "0";
-                }
-                ssd_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Ultra-light Vehicle Detection using Tiny-Mobilenet-SSD</papertitle>
-              <p>
-                I redesigned the classic Mobilenet-SSD network to reduce FLOPS and Params while keeping good accuracy. I pruned the backbone manually, modify the feature map size and anchor configs. The detector achieves 30 FPS on Intel CPU while keeping respectable accuracy.
-              <br>
-              <a href="https://github.com/GivralNguyen/Ultra-light-Vehicle-Detection-using-Tiny-Mobilenet-SSD-real-time-on-CPU">Github</a> 
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="filter_stop()" onmouseover="filter_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='filter_image'>
-                  <img src='images/filterbackproj_before.png' width="160"></div>
-                <img src='images/filterbackproj_after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nist_start() {
-                  document.getElementById('filter_image').style.opacity = "1";
-                }
-
-                function nist_stop() {
-                  document.getElementById('filter_image').style.opacity = "0";
-                }
-                nist_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Analytical Tomographic Image Reconstruction</papertitle>
-              <p>
-                This collection of Python code provides implementations for various analytical tomographic image reconstruction algorithms. These algorithms play a crucial role in transforming projection data into detailed images, making them valuable tools in medical imaging, materials science, and more. Included are Fourier Gridding, Backproject Filter, Filtered Backprojection and Convolve Backproject
-              <br>
-              <a href="https://github.com/GivralNguyen/Python-Medical-Analytical-Tomographic-Image-Reconstruction">Github</a> 
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-  <div style="margin:2em 0 1em 0; padding:1em; border-top:1px solid #ddd; text-align:center;">
-    <!-- <strong>Visitor map</strong> -->
-    <div style="display:none;">
-      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&cl=ffffff&w=a"></script>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="identity">
+      <h1>Quan Nguyen Minh</h1>
+      <p class="role">
+        PhD Student, Computer Science<span class="sep">/</span>University of Florida
+      </p>
+    </div>
+    <div class="masthead-right">
+      <span class="motif" aria-hidden="true"><i></i><i></i><i></i></span>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="icon-moon">☾</span>
+        <span class="icon-sun">☀</span>
+      </button>
     </div>
   </div>
-</body>
+</header>
 
+<nav class="tabs" aria-label="Sections">
+  <div class="wrap tabs-inner" role="tablist">
+    <button class="tab" role="tab" id="tab-bio"        aria-controls="panel-bio"        aria-selected="true"><span class="idx">01</span>bio</button>
+    <button class="tab" role="tab" id="tab-research"   aria-controls="panel-research"   aria-selected="false"><span class="idx">02</span>research</button>
+    <button class="tab" role="tab" id="tab-experience" aria-controls="panel-experience" aria-selected="false"><span class="idx">03</span>experience</button>
+    <button class="tab" role="tab" id="tab-awards"     aria-controls="panel-awards"     aria-selected="false"><span class="idx">04</span>awards &amp; service</button>
+    <button class="tab" role="tab" id="tab-code"       aria-controls="panel-code"       aria-selected="false"><span class="idx">05</span>open source</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ================= BIO ================= -->
+  <section class="panel" id="panel-bio" role="tabpanel" aria-labelledby="tab-bio">
+
+    <div class="bio">
+      <div>
+        <p>
+          I am a PhD student in Computer Science at the <a href="https://www.cise.ufl.edu/">University of Florida</a>,
+          advised by Prof. <a href="https://www.cise.ufl.edu/~mythai/">My T. Thai</a> in the Adaptive Learning
+          and Optimization Lab.
+        </p>
+        <p>
+          Before Florida I received an M.Sc. in Biomedical Computing from <a href="https://www.tum.de/">TU Munich</a>,
+          where I worked on the disparate impact of differential privacy at the
+          <a href="https://aim-lab.io/">AI in Medicine Lab</a> with
+          <a href="https://www.siemens-healthineers.com/">Siemens Healthineers</a>, and a B.Sc. in Biomedical
+          Engineering from <a href="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a>. Along the
+          way I worked on computer vision for edge devices at
+          <a href="https://viettelhightech.vn/">Viettel High Tech</a>, federated learning for resource-constrained
+          devices at the <a href="https://www.sail-research.com/">Security and Artificial Intelligence Lab</a>,
+          VinUniversity, and <a href="https://lumavision.com/innovations/">4D cardiac ultrasound segmentation</a> at
+          LUMA Vision. Most recently I interned at <a href="https://www.seagate.com/">Seagate Technology</a>, working
+          on explainable federated learning.
+        </p>
+
+        <div class="links">
+          <a href="mailto:quan.nguyen1@ufl.edu">Email</a>
+          <a href="./cv.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=kYSrBrwAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/GivralNguyen/">GitHub</a>
+        </div>
+      </div>
+
+      <img class="portrait" src="images/profile_new.jpg" alt="Quan Nguyen Minh" width="400" height="400">
+    </div>
+
+    <div class="section">
+      <h2 class="section-label">Research interests</h2>
+      <div class="interests">
+        <span class="chip primary">Privacy-preserving Machine Learning</span>
+        <span class="chip primary">Federated Learning</span>
+        <span class="chip primary">Parameter-efficient Fine-tuning</span>
+        <span class="chip primary">Agentic AI Security</span>
+        <span class="chip">Differential Privacy</span>
+        <span class="chip">Adversarial ML</span>
+        <span class="chip">Computer Vision</span>
+        <span class="chip">Medical Physics</span>
+        <span class="chip">Explainable AI</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-label">Education</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="when">2025 - now</span>
+          <p class="what"><span class="lead">Ph.D. Computer Science</span>
+            <span class="sub"><a href="https://www.cise.ufl.edu/">University of Florida</a> · Adaptive Learning and Optimization Lab</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2024</span>
+          <p class="what"><span class="lead">M.Sc. Biomedical Computing</span>
+            <span class="sub"><a href="https://www.tum.de/">Technical University of Munich</a></span></p>
+        </div>
+        <div class="row">
+          <span class="when">2021</span>
+          <p class="what"><span class="lead">B.Sc. Biomedical Engineering</span>
+            <span class="sub"><a href="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a></span></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <section class="panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research" hidden>
+
+    <div class="section">
+      <h2 class="section-label">Selected publications</h2>
+
+      <article class="pub">
+        <div class="thumb"><img src="images/promptmia.png" alt="PromptMIA overview"></div>
+        <div>
+          <a class="pub-title" href="https://arxiv.org/abs/2601.06641">Leveraging Soft Prompts for Privacy Attacks in Federated Prompt Tuning</a>
+          <p class="authors"><span class="me">Quan Minh Nguyen</span>, Min-Seon Kim, Hoang M. Ngo, Trong Nghia Hoang, Hyuk-Yoon Kwon, My T. Thai</p>
+          <div class="venue-line"><span class="badge">Preprint</span></div>
+          <p class="abstract">
+            We propose PromptMIA, a membership inference attack tailored to federated prompt-tuning, in which a
+            malicious server can insert adversarially crafted prompts and monitors their updates during collaborative
+            training to accurately determine whether a target data point is in a client's private dataset. We formalize
+            this threat as a security game and empirically show that PromptMIA consistently attains high advantage in
+            this game across diverse benchmark datasets. Our theoretical analysis further establishes a lower bound on
+            the attack's advantage which explains and supports the consistently high advantage observed in our
+            empirical results.
+          </p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2601.06641">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb"><img src="images/qshift.png" alt="Q-ShiftDP overview"></div>
+        <div>
+          <a class="pub-title" href="https://arxiv.org/pdf/2602.02962">Q-ShiftDP: A Differentially Private Parameter-Shift Rule for Quantum Machine Learning</a>
+          <p class="authors">Hoang M. Ngo, Nhat H. X., <span class="me">Quan Minh Nguyen</span>, Nguyen H. K. D., Incheol Shin, My T. Thai</p>
+          <div class="venue-line">
+            <span class="badge tier">AISTATS ’26</span>
+            <span class="badge">Conference on Artificial Intelligence and Statistics</span>
+          </div>
+          <p class="abstract">
+            In this work, we introduce the Differentially Private Parameter-Shift Rule (Q-ShiftDP), the first privacy
+            mechanism tailored to Quantum ML.
+          </p>
+          <p class="pub-links"><a href="https://arxiv.org/pdf/2602.02962">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb"><img src="images/ami.png" alt="Inference attacks against LDP-protected clients"></div>
+        <div>
+          <a class="pub-title" href="https://arxiv.org/abs/2506.17292">Theoretically Unmasking Inference Attacks Against LDP-Protected Clients in Federated Vision Models</a>
+          <p class="authors"><span class="me">Quan Minh Nguyen</span>*, Minh N. Vu*, Truc Nguyen, My T. Thai</p>
+          <div class="venue-line">
+            <span class="badge tier">ICML ’25</span>
+            <span class="badge">International Conference on Machine Learning</span>
+          </div>
+          <p class="abstract">
+            We derive theoretical lower bounds for the success rates of low-polynomial time MIAs that exploit
+            vulnerabilities in fully connected or self-attention layers. We establish that even when data are protected
+            by LDP, privacy risks persist, depending on the privacy budget. Practical evaluations on federated vision
+            models confirm considerable privacy risks, revealing that the noise required to mitigate these attacks
+            significantly degrades models' utility.
+          </p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2506.17292">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/feddct_after.jpg" alt="FedDCT architecture">
+          <img class="alt" src="images/feddct_before.jpg" alt="">
+        </div>
+        <div>
+          <a class="pub-title" href="https://arxiv.org/abs/2211.10948">FedDCT: Federated Learning of Large Convolutional Neural Networks on Resource-Constrained Devices Using Divide and Collaborative Training</a>
+          <p class="authors">
+            <span class="me">Quan Nguyen Minh</span>,
+            <a href="https://scholar.google.com/citations?user=mXcFcNkAAAAJ&amp;hl=en">Hieu H. Pham</a>,
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=WQyULhIAAAAJ">Kok-Seng Wong</a>,
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=L_NKoQwAAAAJ">Phi Le Nguyen</a>,
+            <a href="https://scholar.google.co.jp/citations?user=1DqrHWEAAAAJ&amp;hl=en">Truong Thao Nguyen</a>,
+            <a href="https://scholar.google.com/citations?user=RIeAomMAAAAJ&amp;hl=en">Minh N. Do</a>
+          </p>
+          <div class="venue-line">
+            <span class="badge tier">IEEE TNSM ’23</span>
+            <span class="badge">Transactions on Network and Service Management</span>
+          </div>
+          <p class="abstract">
+            We propose FedDCT (Federated Divide and Collaborative Training), a novel FL architecture that allows for
+            DCML with considerably lower client memory requirements over traditional FL while introducing no additional
+            training cost on the central server. FedDCT enables a cluster of several clients to cooperatively train a
+            large deep learning model, in contrast to standard FL, which demands that each client train the full-size
+            neural network independently during each training round.
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2211.10948">arXiv</a> <span>/</span>
+            <a href="https://ieeexplore.ieee.org/document/10247258/">IEEE</a> <span>/</span>
+            <a href="https://github.com/vinuni-vishc/fedDCT">code</a> <span>/</span>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=vi&amp;user=kYSrBrwAAAAJ&amp;citation_for_view=kYSrBrwAAAAJ:W7OEmFMy1HYC">cite</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb"><img src="images/ice_after.png" alt="3D ICE atrium segmentation"></div>
+        <div>
+          <a class="pub-title" href="https://ieeexplore.ieee.org/document/10793955">Advancing 3D ICE: Challenges and Deep Learning Strategies in Atrium Segmentation</a>
+          <p class="authors">Martina Casagrande, <span class="me">Quan Nguyen</span>, Ivan Dudurych, Christoph Hennersperger, Stefan Wörz</p>
+          <div class="venue-line">
+            <span class="badge tier">IEEE IUS ’24</span>
+            <span class="badge">Ultrasonics, Ferroelectrics &amp; Frequency Control Joint Symposium</span>
+          </div>
+          <p class="abstract">
+            In this work, we present deep learning solutions for 3D intracardiac echocardiography segmentation and
+            outline key challenges for real-time clinical deployment.
+          </p>
+          <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10793955">IEEE</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb">
+          <img src="images/fisheye_after.jpg" alt="ARPD rotated people detection">
+          <img class="alt" src="images/fisheye_before.jpg" alt="">
+        </div>
+        <div>
+          <a class="pub-title" href="https://arxiv.org/abs/2201.10107">ARPD: Anchor-free Rotation-aware People Detection using Topview Fisheye Camera</a>
+          <p class="authors"><span class="me">Quan Nguyen Minh</span>, Bang Le Van, Can Nguyen, Anh Le, <a href="https://scholar.google.com/citations?user=3FN8qi0AAAAJ&amp;hl=en">Viet Dung Nguyen</a></p>
+          <div class="venue-line">
+            <span class="badge tier">IEEE AVSS ’21</span>
+            <span class="badge">International Conference on Advanced Video and Signal Based Surveillance</span>
+            <span class="badge oral">Oral</span>
+          </div>
+          <p class="abstract">
+            In this work, we propose ARPD, a single-stage anchor-free fully convolutional network to detect arbitrarily
+            rotated people in fish-eye images. Our network uses keypoint estimation to find the center point of each
+            object and regress the object's other properties directly. To capture the various orientation of people in
+            fish-eye cameras, in addition to the center and size, ARPD also predicts the angle of each bounding box.
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2201.10107">arXiv</a> <span>/</span>
+            <a href="https://ieeexplore.ieee.org/document/9663768/">IEEE</a> <span>/</span>
+            <a href="data/arpd.bib">bibtex</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="thumb"><img src="images/pano_before.jpg" alt="Panoramic fall detection"></div>
+        <div>
+          <a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-981-16-2094-2_39">Incorporation of Panoramic View in Fall Detection Using Omnidirectional Camera</a>
+          <p class="authors">
+            <a href="https://scholar.google.com/citations?user=3FN8qi0AAAAJ&amp;hl=en">Viet Dung Nguyen</a>,
+            <a href="https://scholar.google.com.vn/citations?user=lJlStI4AAAAJ&amp;hl=vi">Phuc Ngoc Pham</a>,
+            Xuan Bach Nguyen, Thi Men Tran, <span class="me">Quan Nguyen Minh</span>
+          </p>
+          <div class="venue-line">
+            <span class="badge tier">ICISN ’21</span>
+            <span class="badge">International Conference on Intelligent Systems &amp; Networks</span>
+          </div>
+          <p class="abstract">
+            The aim of this work is to incorporate the de-warping of fisheye image using polar to Cartesian
+            transformation to generate a panoramic view to aid in fall detection.
+          </p>
+          <p class="pub-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-981-16-2094-2_39">Springer</a> <span>/</span>
+            <a href="data/pano.bib">bibtex</a>
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience" hidden>
+
+    <div class="section">
+      <h2 class="section-label">Research &amp; industry</h2>
+
+      <div class="xp">
+
+        <div class="xp-item current">
+          <div class="xp-head">
+            <span class="xp-role">Ph.D. Research Intern, ML and Security <span class="xp-org">· <a href="https://www.seagate.com/">Seagate Technology</a>, U.S.</span></span>
+            <span class="xp-when">May - Aug 2026</span>
+          </div>
+          <p class="xp-body">
+            <strong>Explainable Federated Learning:</strong> Perform fundamental research in data security and write
+            peer-reviewed scientific papers. Designing new Explainable Federated Learning Technologies.
+          </p>
+          <p class="xp-body">
+            Mentors:
+            <a href="https://yasaman-keshtkarjahromi.github.io/Yasaman-Keshtkarjahromi/">Yasaman Keshtkarjahromi</a>,
+            Bhakti Chowkwale.
+          </p>
+        </div>
+
+        <div class="xp-item current">
+          <div class="xp-head">
+            <span class="xp-role">Research Assistant, <a href="https://optnetsci.cise.ufl.edu/">Adaptive Learning and Optimization Lab</a> <span class="xp-org">· <a href="https://www.cise.ufl.edu/">University of Florida</a>, U.S.</span></span>
+            <span class="xp-when">2025 - now</span>
+          </div>
+          <p class="xp-body">
+            <strong>AI Security:</strong> Develop novel privacy attacks against Foundation Models (LLMs, VLMs, Vision
+            Transformers). Work on differentially private mechanisms to mitigate adversarial privacy risks.
+            [ICML ’25, AISTATS ’26].
+          </p>
+          <p class="xp-body">
+            <strong>Decentralized Foundation Models:</strong> Work on decentralized training and parameter-efficient
+            fine-tuning of Multimodal Foundation Models in Heterogeneous Environments.
+          </p>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <span class="xp-role">Master's Thesis Student, <a href="https://aim-lab.io/">AI in Medicine Lab</a> <span class="xp-org">· <a href="https://www.tum.de/">TU Munich</a> / <a href="https://www.siemens-healthineers.com/">Siemens Healthineers</a>, Germany</span></span>
+            <span class="xp-when">2024</span>
+          </div>
+          <p class="xp-body">
+            <strong>Differentially Private and Fair Deep Learning:</strong> Investigate the disparate impact of
+            differential privacy on the fairness of AI models. Analyze subgroup disparities and identify algorithmic
+            encoding of protected patients' characteristics through the lens of shortcut learning. Develop
+            fairness-aware clipping and noise-addition mechanisms for DP-SGD.
+          </p>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <span class="xp-role">Internship, Computer Vision and Algorithmic Team <span class="xp-org">· <a href="https://lumavision.com/">LUMA Vision GmbH</a>, Germany</span></span>
+            <span class="xp-when">2023 - 2024</span>
+          </div>
+          <p class="xp-body">
+            <strong>Deep Learning for Ultrasound Imaging:</strong> Build an end-to-end deep learning framework for 4D
+            intracardiac ultrasound image segmentation. Implement a deep learning-based speckle filtering model and SVD
+            clutter filtering to enhance image quality. Deploy on a real-world prototype. [IEEE IUS ’24].
+          </p>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <span class="xp-role">Research Assistant, <a href="https://www.sail-research.com/">Security and Artificial Intelligence Lab</a> <span class="xp-org">· <a href="https://vinuni.edu.vn/">VinUniversity</a>, Vietnam</span></span>
+            <span class="xp-when">2022</span>
+          </div>
+          <p class="xp-body">
+            <strong>Federated Learning on Edge Devices:</strong> Develop a federated learning algorithm that decomposes
+            a large model into an ensemble of lightweight sub-models, enabling clients to train them in parallel across
+            multiple devices without sharing data via split learning. This approach achieves 4-8× reduction in client
+            memory usage while preserving privacy and incurring no additional server overhead. [IEEE TNSM ’23].
+          </p>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-head">
+            <span class="xp-role">Computer Vision Engineer, AI Camera Team <span class="xp-org">· <a href="https://viettelhightech.vn/">Viettel High Tech</a>, Vietnam</span></span>
+            <span class="xp-when">2021</span>
+          </div>
+          <p class="xp-body">
+            <strong>AI on Edge Devices:</strong> Develop face recognition algorithms on edge devices for evaluation in
+            the National Institute of Standards and Technology
+            (<a href="https://pages.nist.gov/frvt/html/frvt11.html">NIST</a>) Face Recognition Technology Evaluation
+            Test. Achieve #1 rank in BORDER category among Vietnamese vendors at the time of submission. Develop
+            real-time people detection algorithms for fisheye cameras and AI-powered traffic cameras for automatic
+            traffic violations identification. [IEEE AVSS ’21 &amp; ICISN ’21].
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AWARDS & SERVICE ================= -->
+  <section class="panel" id="panel-awards" role="tabpanel" aria-labelledby="tab-awards" hidden>
+
+    <div class="section">
+      <h2 class="section-label">Awards &amp; scholarships</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="when">2026</span>
+          <p class="what"><span class="lead"><a href="https://www.cise.ufl.edu/">CISE Graduate Scholarship</a></span><span class="sub">University of Florida</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2023</span>
+          <p class="what"><span class="lead">Scholarship, <a href="https://soict.hust.edu.vn/summer-school-2023">Modern Machine Learning: Foundations and Applications Program</a></span></p>
+        </div>
+        <div class="row">
+          <span class="when">2023</span>
+          <p class="what"><span class="lead">Scholarship, <a href="https://www.truonghekhoahoc.com/">9th Vietnam Summer School of Science</a></span></p>
+        </div>
+        <div class="row">
+          <span class="when">2022</span>
+          <p class="what"><span class="lead"><a href="https://smarthealth.vinuni.edu.vn/vaipe-wins-ai-awards-2022/">First Prize, Vietnam AI Day</a></span><span class="sub">VAIPE: protective healthcare monitoring and supporting system for Vietnamese</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2021</span>
+          <p class="what"><span class="lead">Third Prize, <a href="https://hust.edu.vn/en/">HUST</a> Academic Research Contest</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2020</span>
+          <p class="what"><span class="lead">Academic Excellence Scholarship</span><span class="sub"><a href="https://hust.edu.vn/en/">Hanoi University of Science and Technology</a>, students with top academic results</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2019</span>
+          <p class="what"><span class="lead">Scholarship, <a href="https://www.facebook.com/FYT.vn/?locale=vi_VN">FPT Center for Young Talents</a></span><span class="sub">25 awarded nationwide per year</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2018</span>
+          <p class="what"><span class="lead"><a href="https://temasekfoundation.org.sg/programmes-s/Specialists-Community-Action-and-Leadership-Exchange-SCALE-Programmes">TF SCALE</a> International Exchange Scholarship</span><span class="sub"><a href="https://www.tp.edu.sg/">Temasek Polytechnic</a>, Singapore</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-label">Teaching</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="when">S’26</span>
+          <p class="what"><span class="lead">CDA 3101, Computer Organization</span><span class="sub"><a href="https://www.cise.ufl.edu/">University of Florida</a></span></p>
+        </div>
+        <div class="row">
+          <span class="when">S’22</span>
+          <p class="what"><span class="lead">COMP 1020, OOP &amp; Data Structures</span><span class="sub"><a href="https://vinuni.edu.vn/">VinUniversity</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-label">Service</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="when">2025 - 26</span>
+          <p class="what"><span class="lead"><a href="https://csonet-conf.github.io/csonet26/index.html">CSoNet</a></span><span class="sub">Conference Organizer, Webmaster</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2023</span>
+          <p class="what"><span class="lead"><a href="https://soict.org/">SOICT</a></span><span class="sub">Reviewer, Program Committee</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2022</span>
+          <p class="what"><span class="lead"><a href="https://smarthealth.vinuni.edu.vn/">VinUni-Illinois Smart Health Center Workshop</a></span><span class="sub">Workshop Organizer</span></p>
+        </div>
+        <div class="row">
+          <span class="when">2022</span>
+          <p class="what"><span class="lead">IEEE AVSS · IEEE Access</span><span class="sub">Reviewer</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-label">Languages</h2>
+      <div class="interests">
+        <span class="chip">Vietnamese (Native)</span>
+        <span class="chip">English, IELTS 8.5 (C2)</span>
+        <span class="chip">German (A2)</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= OPEN SOURCE ================= -->
+  <section class="panel" id="panel-code" role="tabpanel" aria-labelledby="tab-code" hidden>
+
+    <div class="section">
+      <h2 class="section-label">(Mostly) open source</h2>
+      <div class="cards">
+
+        <article class="card">
+          <div class="thumb">
+            <img src="images/feddct_before.jpg" alt="FedDCT">
+            <img class="alt" src="images/feddct_after.jpg" alt="">
+          </div>
+          <div>
+            <h3>FedDCT: Federated Divide and Co-training</h3>
+            <p>
+              Reference implementation and experiments for the IEEE TNSM paper: training large CNNs across
+              memory-constrained clients by splitting them into a collaboratively trained ensemble.
+            </p>
+            <p class="pub-links"><a href="https://github.com/vinuni-vishc/fedDCT">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="images/nist_before.jpg" alt="NIST FRVT">
+            <img class="alt" src="images/nist_after.jpg" alt="">
+          </div>
+          <div>
+            <h3>NIST FRVT 1:1 Face Recognition Vendor Test</h3>
+            <p>
+              Face recognition models built with the <a href="https://viettelhightech.vn/">Viettel High Tech</a> team
+              for NIST's independent 1:1 verification evaluation, ranked #1 in the BORDER category among Vietnamese
+              vendors at the time of submission.
+            </p>
+            <p class="pub-links"><a href="https://pages.nist.gov/frvt/html/frvt11.html">Report</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="images/sort_before.jpg" alt="SORT in Java">
+            <img class="alt" src="images/sort_after.jpg" alt="">
+          </div>
+          <div>
+            <h3>SORT in Java</h3>
+            <p>
+              Simple Online Realtime Tracking reimplemented from scratch in Java using only OpenCV, applied to vehicle
+              tracking on edge devices.
+            </p>
+            <p class="pub-links"><a href="https://github.com/GivralNguyen/sort-java">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="images/ssd_before.jpg" alt="Tiny MobileNet-SSD">
+            <img class="alt" src="images/ssd_after.jpg" alt="">
+          </div>
+          <div>
+            <h3>Ultra-light Vehicle Detection using Tiny MobileNet-SSD</h3>
+            <p>
+              A redesigned MobileNet-SSD with a manually pruned backbone, modified feature map sizes and anchor
+              configuration, reducing FLOPs and parameters while keeping good accuracy. The detector runs at 30 FPS on
+              an Intel CPU.
+            </p>
+            <p class="pub-links"><a href="https://github.com/GivralNguyen/Ultra-light-Vehicle-Detection-using-Tiny-Mobilenet-SSD-real-time-on-CPU">GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="images/filterbackproj_before.png" alt="Tomographic reconstruction">
+            <img class="alt" src="images/filterbackproj_after.png" alt="">
+          </div>
+          <div>
+            <h3>Analytical Tomographic Image Reconstruction</h3>
+            <p>
+              Python implementations of classical analytical tomographic reconstruction algorithms: Fourier gridding,
+              backproject filter, filtered backprojection and convolve backproject. These algorithms transform
+              projection data into detailed images for medical imaging and materials science.
+            </p>
+            <p class="pub-links"><a href="https://github.com/GivralNguyen/Python-Medical-Analytical-Tomographic-Image-Reconstruction">GitHub</a></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <span>Gainesville, FL · quan.nguyen1@ufl.edu</span>
+  <span>Last updated 2026</span>
+</footer>
+
+<!-- visitor map, kept disabled -->
+<div style="display:none">
+  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=hmIfEwbtPyT4fAgf0EIp_Xo1LUscuzQCoj1FtxsKDcI&amp;cl=ffffff&amp;w=a"></script>
+</div>
+
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+
+  function panelOf(tab) { return document.getElementById(tab.getAttribute('aria-controls')); }
+  function slugOf(tab) { return tab.id.replace('tab-', ''); }
+
+  function select(tab, pushHash) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      var p = panelOf(t);
+      p.hidden = !on;
+      p.classList.remove('panel-enter');
+      if (on) { void p.offsetWidth; p.classList.add('panel-enter'); }
+    });
+    if (pushHash) history.replaceState(null, '', '#' + slugOf(tab));
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab, true); });
+    tab.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      var next = tabs[(i + d + tabs.length) % tabs.length];
+      next.focus();
+      select(next, true);
+    });
+  });
+
+  var fromHash = tabs.filter(function (t) { return '#' + slugOf(t) === location.hash; })[0];
+  select(fromHash || tabs[0], false);
+
+  // theme
+  var root = document.documentElement;
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+})();
+</script>
+
+</body>
 </html>
